@@ -1,0 +1,223 @@
+/* =========================
+   PAGE
+========================= */
+.criminal-page {
+  color: #ffffff;
+}
+
+.page-header p {
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   TOP BAR (SEARCH + FILTER + ADD)
+========================= */
+.top-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* COMMON HEIGHT */
+.search-input,
+.status-filter,
+.add-btn {
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+/* SEARCH */
+.search-input {
+  padding: 0 16px;
+  border: 1px solid #1e293b;
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 48px;
+}
+
+.search-input::placeholder {
+  color: #64748b;
+}
+
+/* STATUS FILTER */
+.status-filter {
+  padding: 0 16px;
+  border: 1px solid #1e293b;
+  background: #0f172a;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  padding: 0 20px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   MAIN CONTENT LAYOUT
+========================= */
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* =========================
+   LEFT LIST
+========================= */
+.criminal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* =========================
+   CRIMINAL CARD
+========================= */
+.criminal-card {
+  background: linear-gradient(145deg, #0b1220, #0f172a);
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 14px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #1e293b;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.criminal-card:hover {
+  background: #111827;
+  transform: translateY(-2px);
+}
+
+.avatar {
+  font-size: 36px;
+}
+
+.card-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.alias,
+.physical {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.crime-tags {
+  margin: 8px 0;
+}
+
+.tag {
+  background: #1e40af;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.meta {
+  font-size: 12px;
+  color: #94a3b8;
+  display: flex;
+  gap: 16px;
+}
+
+/* STATUS BADGE */
+.status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status.wanted {
+  background: rgba(220, 38, 38, 0.15);
+  color: #f87171;
+}
+
+.status.arrested {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
+
+.status.convicted {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+}
+
+/* =========================
+   RIGHT DETAILS PANEL
+========================= */
+.details-panel {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* Scrollbar */
+.details-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.details-panel::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+/* EMPTY STATE */
+.empty-state {
+  text-align: center;
+  color: #64748b;
+  margin-top: 80px;
+}
+
+.empty-icon {
+  font-size: 56px;
+  opacity: 0.4;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   PROFILE ACTIONS (PRINT)
+========================= */
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.print-btn {
+  background: #1e40af;
+  color: #e5e7eb;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.print-btn:hover {
+  background: #2563eb;
+}

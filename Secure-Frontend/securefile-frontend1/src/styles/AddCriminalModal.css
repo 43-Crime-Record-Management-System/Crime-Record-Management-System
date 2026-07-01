@@ -1,0 +1,118 @@
+.add-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.add-modal {
+  background: linear-gradient(145deg, #020617, #020617);
+  width: 760px;
+  border-radius: 16px;
+  padding: 24px;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+
+.add-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.add-header p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.add-form label {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.add-form input,
+.add-form select,
+.add-form textarea {
+  width: 100%;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 10px;
+  color: #e5e7eb;
+  margin-bottom: 14px;
+}
+
+.add-form textarea {
+  resize: none;
+  height: 90px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.row:nth-of-type(2) {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.crime-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.crime-chip {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  color: #cbd5f5;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.crime-chip.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+}
+
+.add-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+.add-btn {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}

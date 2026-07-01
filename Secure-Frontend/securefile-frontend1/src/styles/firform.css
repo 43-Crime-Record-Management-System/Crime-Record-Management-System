@@ -1,0 +1,35 @@
+/* Common input styles */
+.fir-form input,
+.fir-form textarea,
+.fir-form select {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e5e7eb;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Fix select arrow & background */
+.fir-form select {
+  appearance: none;        /* remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Placeholder-like color for default option */
+.fir-form select option[value=""] {
+  color: #94a3b8;
+}
+
+/* Focus state (same as input focus) */
+.fir-form input:focus,
+.fir-form textarea:focus,
+.fir-form select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+}

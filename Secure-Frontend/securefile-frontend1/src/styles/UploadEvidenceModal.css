@@ -1,0 +1,72 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+}
+
+.upload-modal {
+  width: 420px;
+  background: #020617;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #1e293b;
+}
+
+.upload-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.upload-body input,
+.upload-body textarea,
+.upload-body select {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.file-box {
+  border: 1px dashed #1e293b;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.upload-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.upload-btn {
+  background: #2563eb;
+  border: none;
+  padding: 8px 18px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid #1e293b;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 10px;
+}

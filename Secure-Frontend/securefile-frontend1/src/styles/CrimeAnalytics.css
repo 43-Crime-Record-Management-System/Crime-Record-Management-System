@@ -1,0 +1,40 @@
+.crime-analytics {
+  background: #020617;
+  padding: 24px;
+  border-radius: 14px;
+}
+.crime-analytics header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.filters select {
+  background: #0f172a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 16px;
+}
+.card {
+  background: #0f172a;
+  padding: 16px;
+  border-radius: 12px;
+}
+.report-btn {
+  background: #0B67DC;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+}

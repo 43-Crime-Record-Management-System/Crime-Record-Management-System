@@ -1,0 +1,20 @@
+[
+  {
+    "id": "FIR-2024-00142",
+    "description": "Theft of mobile phone and wallet",
+    "status": "REGISTERED",
+    "assignedTo": null
+  },
+  {
+    "id": "FIR-2024-00143",
+    "description": "Unauthorized bank withdrawal",
+    "status": "APPROVED",
+    "assignedTo": "officer1@police.gov"
+  },
+  {
+    "id": "FIR-2024-00144",
+    "description": "Chain snatching near bus stand",
+    "status": "REGISTERED",
+    "assignedTo": null
+  }
+]

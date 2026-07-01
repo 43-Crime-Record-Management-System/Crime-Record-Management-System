@@ -1,0 +1,390 @@
+/* ROOT */
+.sho-dashboard {
+  padding: 24px;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.sho-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sho-header p {
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* KPI CARDS */
+.sho-kpis {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.kpi-card {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: inset 0 0 0 1px #1e293b;
+}
+
+.kpi-card span {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.kpi-card h3 {
+  margin-top: 8px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.kpi-card.warning h3 {
+  color: #facc15;
+}
+
+.kpi-card.success h3 {
+  color: #22c55e;
+}
+
+.kpi-card.danger h3 {
+  color: #ef4444;
+}
+
+/* MAIN GRID */
+.sho-main {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+/* PANEL */
+.panel {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: inset 0 0 0 1px #1e293b;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.link {
+  font-size: 13px;
+  color: #60a5fa;
+  cursor: pointer;
+}
+
+/* EMPTY STATE */
+.empty-state {
+  margin-top: 32px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+.empty-state .check {
+  font-size: 36px;
+  color: #22c55e;
+  margin-bottom: 8px;
+}
+
+/* TEAM PERFORMANCE */
+.officer-row {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 100px 40px;
+  gap: 12px;
+  align-items: center;
+}
+
+.officer-row p {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.progress {
+  height: 8px;
+  background: #020617;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress .bar {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+}
+
+.percent {
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: right;
+}
+
+/* CHART PLACEHOLDER */
+.chart-placeholder {
+  margin-top: 16px;
+  height: 220px;
+  border-radius: 14px;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sho-main {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== Pending Approvals ===== */
+
+/* ===== Pending Approvals Panel (Polished Spacing) ===== */
+
+.pending-panel {
+  padding: 20px;
+}
+
+.pending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* 🔥 more space between cards */
+}
+
+.pending-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px; /* 🔥 increased padding */
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* LEFT CONTENT */
+.pending-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* 🔥 space between FIR no & desc */
+}
+
+.fir-id {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.fir-desc {
+  font-size: 13px;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+/* RIGHT ACTIONS */
+.pending-right {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* 🔥 spacing between badge & button */
+}
+
+/* STATUS BADGE */
+.status-badge.pending {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+}
+
+/* REVIEW BUTTON */
+.review-btn {
+  background: #2563eb;
+  border: none;
+  padding: 7px 18px; /* 🔥 button not cramped */
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.review-btn:hover {
+  background: #1d4ed8;
+}
+/* ===== FIX: SPACE BETWEEN HEADER & FIR LIST ===== */
+
+/* Pending Approvals panel */
+.panel {
+  padding: 20px;
+}
+
+/* Header inside panel */
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;   /* 🔥 THIS creates space below "Pending Approvals" */
+}
+
+/* FIR list container */
+.pending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;             /* space between FIR cards */
+}
+
+/* Individual FIR card */
+.pending-card {
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.015)
+  );
+  border: 1px solid rgba(255,255,255,0.06);
+}/* ===== FORCE SPACE BETWEEN PENDING APPROVALS & CRIME TRENDS ===== */
+
+/* space after the main grid (Pending + Team Performance) */
+.sho-main {
+  margin-bottom: 36px;   /* 🔥 THIS is the key */
+}
+
+/* safety: also add space before crime trends panel */
+.sho-dashboard > .panel {
+  margin-top: 24px;
+}
+/* ===== OFFICER PERFORMANCE ===== */
+
+.performance-row {
+  display: grid;
+  grid-template-columns: 40px 1.5fr 2fr 120px;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  margin-top: 14px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #0b1220, #020617);
+}
+
+.rank {
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.details p {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+.progress {
+  height: 8px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress .bar {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.bar.good {
+  background: #22c55e;
+}
+
+.bar.average {
+  background: #facc15;
+}
+
+.bar.poor {
+  background: #ef4444;
+}
+
+.status {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.status.good {
+  color: #22c55e;
+}
+
+.status.average {
+  color: #facc15;
+}
+
+.status.poor {
+  color: #ef4444;
+}
+
+
+.link {
+  cursor: pointer;
+  color: #4da3ff;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ===== CRIME TRENDS ===== */
+
+.trend-list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.02)
+  );
+  font-size: 14px;
+}
+
+.trend {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.trend.up {
+  color: #f97316;   /* orange – rising */
+}
+
+.trend.down {
+  color: #22c55e;   /* green – decreasing */
+}
+
+.trend.stable {
+  color: #9ca3af;   /* grey – stable */
+}

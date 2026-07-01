@@ -1,0 +1,71 @@
+.fir-full-page {
+  padding: 28px;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.fir-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.fir-header button {
+  background: transparent;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* GRID SYSTEM */
+.fir-grid {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.fir-grid.two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fir-grid.one-col {
+  grid-template-columns: 1fr;
+}
+
+.fir-grid.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* SECTION CARD */
+.fir-section {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.fir-section h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #93c5fd;
+}
+
+.fir-section p,
+.fir-section li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.fir-section ul {
+  padding-left: 16px;
+}
+
+/* DESCRIPTION */
+.description {
+  margin-top: 8px;
+  line-height: 1.6;
+  color: #e5e7eb;
+}

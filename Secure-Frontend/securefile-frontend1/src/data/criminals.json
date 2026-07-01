@@ -1,0 +1,152 @@
+[
+  {
+  "id": 1,
+  "name": "Ravi Shankar",
+  "alias": ["Lucky", "Bade Bhai"],
+  "gender": "Male",
+  "dob": "1985-03-15",
+  "status": "WANTED",
+  "physical": "Height 5'10\", Medium build, Scar on left cheek, Tattoo on right arm",
+  "crimes": ["Armed Robbery", "Assault"],
+  "linkedCases": ["FIR-2024-00142"],
+  "arrests": [
+    {
+      "date": "2020-05-10",
+      "ipc": "392",
+      "status": "Released on bail"
+    }
+  ],
+  "mugshot": "/assets/mugshots/ravi.jpg",
+  "fingerprint": "/assets/fingerprints/ravi.png"
+}
+,
+  {
+    "id": 2,
+    "name": "Deepak Yadav",
+    "alias": ["Cyber Don"],
+    "gender": "Male",
+    "dob": "1990-11-22",
+    "status": "ARRESTED",
+    "lastUpdated": "12/01/2024",
+    "physical": "Height 5'6\", Slim build, Wears glasses",
+    "crimes": ["Cybercrime", "Fraud"],
+    "linkedCases": ["FIR-2023-00987"],
+    "arrests": [
+      { "date": "2023-09-18", "ipc": "420", "status": "In custody" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mohammad Hussain",
+    "alias": ["Don Hussain"],
+    "gender": "Male",
+    "dob": "1978-07-09",
+    "status": "CONVICTED",
+    "lastUpdated": "05/12/2023",
+    "physical": "Height 5'9\", Heavy build, Beard",
+    "crimes": ["Murder", "Extortion"],
+    "linkedCases": ["FIR-2019-00321"],
+    "arrests": [
+      { "date": "2019-02-14", "ipc": "302", "status": "Life Imprisonment" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Arjun Patel",
+    "alias": ["Chain Snatcher"],
+    "gender": "Male",
+    "dob": "1995-04-30",
+    "status": "WANTED",
+    "lastUpdated": "20/01/2024",
+    "physical": "Height 5'7\", Lean build, Mole on neck",
+    "crimes": ["Theft", "Chain Snatching"],
+    "linkedCases": ["FIR-2024-00211"],
+    "arrests": []
+  },
+  {
+    "id": 5,
+    "name": "Suresh Naidu",
+    "alias": ["Auto King"],
+    "gender": "Male",
+    "dob": "1982-10-18",
+    "status": "ARRESTED",
+    "lastUpdated": "08/01/2024",
+    "physical": "Height 5'8\", Medium build, Bald",
+    "crimes": ["Auto Theft"],
+    "linkedCases": ["FIR-2023-00876"],
+    "arrests": [
+      { "date": "2023-12-02", "ipc": "379", "status": "Judicial custody" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Karthik Raj",
+    "alias": ["Speedster"],
+    "gender": "Male",
+    "dob": "1998-01-12",
+    "status": "WANTED",
+    "lastUpdated": "18/01/2024",
+    "physical": "Height 5'11\", Athletic build, Tattoo on wrist",
+    "crimes": ["Illegal Racing", "Public Endangerment"],
+    "linkedCases": ["FIR-2024-00098"],
+    "arrests": []
+  },
+  {
+    "id": 7,
+    "name": "Anita Verma",
+    "alias": ["Queen Pin"],
+    "gender": "Female",
+    "dob": "1987-06-25",
+    "status": "ARRESTED",
+    "lastUpdated": "14/01/2024",
+    "physical": "Height 5'4\", Slim build, Short hair",
+    "crimes": ["Money Laundering", "Fraud"],
+    "linkedCases": ["FIR-2023-01011"],
+    "arrests": [
+      { "date": "2024-01-10", "ipc": "409", "status": "Under investigation" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Rahul Mehta",
+    "alias": ["Fixer"],
+    "gender": "Male",
+    "dob": "1992-09-03",
+    "status": "CONVICTED",
+    "lastUpdated": "22/11/2023",
+    "physical": "Height 5'6\", Medium build, Limping walk",
+    "crimes": ["Match Fixing", "Bribery"],
+    "linkedCases": ["FIR-2021-00544"],
+    "arrests": [
+      { "date": "2021-06-19", "ipc": "171E", "status": "5 years imprisonment" }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Salman Khan",
+    "alias": ["Smuggler Salman"],
+    "gender": "Male",
+    "dob": "1984-12-01",
+    "status": "WANTED",
+    "lastUpdated": "16/01/2024",
+    "physical": "Height 6'0\", Strong build, Burn mark on arm",
+    "crimes": ["Smuggling", "Illegal Arms Trade"],
+    "linkedCases": ["FIR-2024-00305"],
+    "arrests": []
+  },
+  {
+    "id": 10,
+    "name": "Pooja Nair",
+    "alias": ["Digital Ghost"],
+    "gender": "Female",
+    "dob": "1996-08-14",
+    "status": "ARRESTED",
+    "lastUpdated": "11/01/2024",
+    "physical": "Height 5'5\", Slim build, Spectacles",
+    "crimes": ["Identity Theft", "Cyber Fraud"],
+    "linkedCases": ["FIR-2023-00999"],
+    "arrests": [
+      { "date": "2023-11-28", "ipc": "66C IT Act", "status": "On bail" }
+    ]
+  }
+]

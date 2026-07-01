@@ -1,0 +1,42 @@
+/* FIR PORTAL HEADER */
+.fir-header {
+  display: flex;
+  flex-direction: column;   /* 🔑 keela keela */
+  align-items: flex-start;  /* 🔑 left align */
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+/* TITLE */
+.fir-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* DESCRIPTION */
+.fir-header p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* TABS */
+.fir-tabs {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.fir-tabs button {
+  background: transparent;
+  border: 1px solid #1e293b;
+  color: #cbd5f5;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fir-tabs button.active {
+  color: #38bdf8;
+  border-color: #38bdf8;
+}

@@ -1,0 +1,8 @@
+frontend:
+  build:
+    context: "C:/Users/Hp/Downloads/secure (2)/secure/secure/secure-frontend1/securefile-frontend1"
+  container_name: secure-frontend-container
+  ports:
+    - "3000:80"
+  depends_on:
+    - api-gateway

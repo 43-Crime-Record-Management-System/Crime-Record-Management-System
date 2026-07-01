@@ -1,0 +1,133 @@
+/* BASE */
+.sho-dashboard {
+  padding: 24px;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.sho-header h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.sho-header p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* SECTION */
+.fir-section {
+  margin-top: 28px;
+}
+
+.fir-section h3 {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+/* FIR CARD */
+.fir-card {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr 2.5fr;
+  gap: 20px;
+  padding: 18px;
+  margin-bottom: 14px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+}
+
+/* INFO */
+.fir-info h4 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.fir-info p {
+  font-size: 13px;
+  color: #cbd5f5;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 999px;
+}
+
+.badge.pending {
+  background: rgba(234,179,8,0.15);
+  color: #facc15;
+}
+
+/* REVIEW */
+.fir-review {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #cbd5f5;
+}
+
+.fir-review input {
+  margin-right: 8px;
+}
+
+/* ACTIONS */
+.fir-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fir-actions select {
+  background: #020617;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+/* BUTTONS */
+.approve-btn {
+  background: #2563eb;
+  border: none;
+  padding: 6px 14px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.approve-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.reject-btn {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reject-btn:hover {
+  background: rgba(239,68,68,0.1);
+}
+
+/* EMPTY */
+.empty-box {
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #94a3b8;
+  border: 1px dashed rgba(255,255,255,0.15);
+  border-radius: 10px;
+}

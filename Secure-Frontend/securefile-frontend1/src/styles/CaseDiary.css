@@ -1,0 +1,292 @@
+/* ===== PAGE BASE ===== */
+.case-page {
+  padding: 24px 32px;
+  color: #e5e7eb;
+}
+
+/* ===== HEADER (UNDER NAVBAR) ===== */
+.case-header {
+  margin-bottom: 24px;
+}
+
+.case-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.case-header p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ===== BODY GRID ===== */
+.case-body {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+}
+
+/* ===== ACTIVE CASES (LEFT) ===== */
+.active-cases h4 {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #cbd5f5;
+}
+
+.active-case-card {
+  background: linear-gradient(180deg, #0b1220, #060b18);
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.case-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.priority {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+.progress {
+  height: 4px;
+  margin-top: 12px;
+  background: #2563eb;
+  border-radius: 999px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.case-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== CASE INFO CARD ===== */
+.case-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #0b1220, #060b18);
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.case-info h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.case-info p {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.case-meta {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+/* ===== ADD ENTRY BUTTON ===== */
+.add-entry-btn {
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== TABS ===== */
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tabs button {
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #94a3b8;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #020617;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #1e293b;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.dot {
+  position: absolute;
+  left: -30px;
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  background: #38bdf8;
+  border-radius: 50%;
+}
+
+.timeline-card {
+  background: linear-gradient(180deg, #0b1220, #060b18);
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.timeline-card h4 {
+  font-size: 15px;
+}
+
+.timeline-card .date {
+  display: block;
+  margin: 4px 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ===== EVIDENCE ===== */
+.evidence-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.evidence-card {
+  background: linear-gradient(180deg, #0b1220, #060b18);
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+}
+
+.upload-card {
+  border: 1px dashed #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #94a3b8;
+}
+
+.upload-card:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.file-name {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+
+/* ===== EMPTY ===== */
+.empty {
+  text-align: center;
+  color: #64748b;
+}
+/* COURT EMPTY STATE */
+.court-empty {
+  margin-top: 60px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.court-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.schedule-btn {
+  margin-top: 14px;
+  background: transparent;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.schedule-btn:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.court-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.court-card {
+  background: linear-gradient(180deg, #0b1220, #060b18);
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.court-card h4 {
+  font-size: 15px;
+}
+
+.court-card p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.court-card .date {
+  font-size: 12px;
+  color: #94a3b8;
+}

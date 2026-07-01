@@ -1,0 +1,240 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ================= STATS ================= */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.stat-card h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.stat-title {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.stat-card.danger h2 {
+  color: #ef4444;
+}
+
+/* ================= GRIDS ================= */
+.middle-grid,
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.link {
+  font-size: 13px;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+/* ================= LIST ================= */
+.list-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* ================= BADGES ================= */
+.badge {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.badge.blue {
+  background: rgba(59,130,246,0.15);
+  color: #60a5fa;
+}
+
+.badge.yellow {
+  background: rgba(234,179,8,0.15);
+  color: #facc15;
+}
+
+.badge.red {
+  background: rgba(239,68,68,0.15);
+  color: #ef4444;
+}
+
+/* ================= PROGRESS ================= */
+.progress {
+  height: 8px;
+  background: #1e293b;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #3b82f6;
+}
+
+/* ================= ALERTS ================= */
+.alert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.alert-item:last-child {
+  border-bottom: none;
+}
+
+/* ================= CHART PLACEHOLDER ================= */
+.chart-placeholder {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  border: 1px dashed #1e293b;
+  border-radius: 12px;
+}
+
+.muted {
+  font-size: 13px;
+  color: #94a3b8;
+}
+/* =========================
+   CRIME TREND CHART
+========================= */
+.crime-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.crime-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.crime-bar span {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* BAR BACKGROUND */
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #1e293b;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* BAR FILL */
+.bar-fill {
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* COLORS */
+.bar-fill.theft {
+  background: #3b82f6;
+}
+
+.bar-fill.cyber {
+  background: #22c55e;
+}
+
+.bar-fill.assault {
+  background: #f97316;
+}
+.dashboard-card canvas {
+  margin-top: 12px;
+}
+/* ================= CHART LEGEND ================= */
+
+.chart-legend {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Theft – Blue */
+.chart-legend .theft {
+  color: #3b82f6;
+}
+
+/* Cyber Crime – Green */
+.chart-legend .cyber {
+  color: #22c55e;
+}
+
+/* Assault – Orange */
+.chart-legend .assault {
+  color: #f97316;
+}
+.stat-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.stat-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(59, 130, 246, 0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60a5fa;
+}
+
+.stat-card.danger .stat-icon {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}

@@ -1,0 +1,96 @@
+.case-page {
+  padding: 28px;
+  color: #e5e7eb;
+}
+
+.case-header {
+  margin-bottom: 16px;
+}
+
+.case-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.case-header p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* CARD */
+.case-card {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* TABLE */
+.case-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.case-table thead {
+  background: #020617;
+}
+
+.case-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.case-table td {
+  padding: 14px 16px;
+  border-top: 1px solid #1f2937;
+  font-size: 14px;
+}
+
+.fir-id {
+  color: #93c5fd;
+  font-weight: 500;
+}
+
+/* DROPDOWN */
+.case-table select {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #374151;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ASSIGNED OFFICER */
+.assigned-officer {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+/* =========================
+   STATUS BADGES (FINAL FIX)
+========================= */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* APPROVED */
+.status-badge.approved {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+/* ASSIGNED */
+.status-badge.assigned {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+}

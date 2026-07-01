@@ -1,0 +1,205 @@
+.audit-page {
+  padding: 28px;
+  color: #e5e7eb;
+}
+
+/* ===== Header ===== */
+.audit-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.audit-header p {
+  margin-top: 6px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.audit-divider {
+  margin-top: 18px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #2f3640, transparent);
+}
+
+/* ===== Stats ===== */
+.audit-stats {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+}
+
+.stat-card span {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.stat-card h3 {
+  margin-top: 4px;
+  font-size: 22px;
+}
+
+.stat-blue { color: #60a5fa; }
+.stat-green { color: #34d399; }
+.stat-red { color: #f87171; }
+
+/* ===== Table Card ===== */
+.audit-table-card {
+  margin-top: 32px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+}
+
+.audit-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.audit-table-header h2 {
+  font-size: 18px;
+}
+
+/* ===== Controls ===== */
+.audit-controls {
+  display: flex;
+  gap: 12px;
+}
+
+.search-box,
+.filter-box {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  gap: 8px;
+}
+
+.search-box input,
+.filter-box select {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e5e7eb;
+  font-size: 13px;
+}
+
+.search-box input::placeholder {
+  color: #6b7280;
+}
+
+/* ===== Table ===== */
+.table-wrapper {
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background: #020617;
+  z-index: 2;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+td {
+  padding: 12px;
+}
+
+tbody tr {
+  border-top: 1px solid #1e293b;
+  transition: background 0.15s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(2, 6, 23, 0.4);
+}
+
+tbody tr:hover {
+  background: rgba(30, 41, 59, 0.45);
+}
+
+/* ===== Badges ===== */
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.status-success {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+}
+
+.status-failed {
+  background: rgba(248, 113, 113, 0.15);
+  color: #f87171;
+}
+
+.role-admin {
+  background: rgba(96, 165, 250, 0.15);
+  color: #60a5fa;
+}
+
+.role-officer {
+  background: rgba(34, 211, 238, 0.15);
+  color: #22d3ee;
+}
+
+.role-system {
+  background: rgba(148, 163, 184, 0.15);
+  color: #94a3b8;
+}
+
+/* ===== Utilities ===== */
+.mono {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+}
+
+.action {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+  padding: 60px;
+  text-align: center;
+  color: #6b7280;
+}

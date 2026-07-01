@@ -1,0 +1,46 @@
+/* =========================
+   APP LAYOUT
+========================= */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* =========================
+   CONTENT AREA (FINAL FIX)
+========================= */
+.content-area {
+  flex: 1;
+  min-height: 100vh;
+
+  /* ❌ NO margin-left here (sidebar already in flex) */
+
+  /* 🔥 Space for fixed topbar */
+  padding-top: 72px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+
+  background: #020617;
+}
+.dashboard-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.dashboard-card h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.dashboard-number {
+  margin-top: 6px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #f8fafc;
+}

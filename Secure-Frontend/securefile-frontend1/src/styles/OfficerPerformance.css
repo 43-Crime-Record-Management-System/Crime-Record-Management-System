@@ -1,0 +1,55 @@
+.performance-page {
+  padding: 20px;
+  color: #e5e7eb;
+}
+
+.performance-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.performance-subtitle {
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.performance-card {
+  background: #0b1220;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.performance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.performance-table th,
+.performance-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #1f2937;
+}
+
+.performance-table th {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.chart-card {
+  background: #0b1220;
+  border-radius: 12px;
+  padding: 16px;
+  height: 360px;
+}
+
+.chart-card canvas {
+  max-height: 260px;
+}
