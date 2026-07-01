@@ -1,0 +1,30 @@
+package com.secure.firservices.controller;
+import com.secure.firservices.entity.FIR;
+import com.secure.firservices.service.FIRService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/fir")
+public class FIRController {
+
+    @Autowired
+    FIRService firService;
+
+    @PostMapping("/create")
+    public FIR create(@RequestBody FIR fir) {
+        return firService.createFIR(fir);
+    }
+
+    @GetMapping("/officer/{email}")
+    public List<FIR> getByOfficer(@PathVariable String email) {
+        return firService.getFIRByOfficer(email);
+    }
+
+    @PutMapping("/status/{id}")
+    public FIR updateStatus(@PathVariable String id, @RequestParam String status) {
+        return firService.updateStatus(id, status);
+    }
+}

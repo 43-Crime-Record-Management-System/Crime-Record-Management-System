@@ -1,0 +1,5 @@
+package com.secure.authservices.entity;
+
+public class User {
+
+}

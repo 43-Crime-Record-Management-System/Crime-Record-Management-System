@@ -1,0 +1,37 @@
+package com.secure.notification.controller;
+
+import com.secure.notification.entity.Notification;
+import com.secure.notification.service.NotificationService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/notifications")
+@CrossOrigin(origins = "*")
+public class NotificationController {
+
+    private final NotificationService service;
+
+    public NotificationController(NotificationService service) {
+        this.service = service;
+    }
+
+    @PostMapping("/create")
+    public Notification create(@RequestBody Notification notification) {
+        return service.create(notification);
+    }
+
+    @GetMapping("/{email}/{role}")
+    public List<Notification> getByUserAndRole(
+            @PathVariable String email,
+            @PathVariable String role) {
+
+        return service.getByUserAndRole(email, role);
+    }
+
+    @PutMapping("/read/{id}")
+    public void markRead(@PathVariable String id) {
+        service.markRead(id);
+    }
+}

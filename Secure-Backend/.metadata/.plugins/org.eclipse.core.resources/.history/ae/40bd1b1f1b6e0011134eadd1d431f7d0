@@ -1,0 +1,7 @@
+spring.application.name=CriminalServices
+
+server.port=${SERVER_PORT:9003}
+
+spring.data.mongodb.uri=mongodb+srv://brinda_22:Brinda22@cluster0.spfgdyh.mongodb.net/criminaldb?retryWrites=true&w=majority&appName=Cluster0
+
+eureka.client.service-url.defaultZone=${EUREKA_SERVER_URL:http://localhost:8761/eureka}

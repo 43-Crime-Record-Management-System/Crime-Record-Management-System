@@ -1,0 +1,16 @@
+package com.secure.notification.service;
+
+import com.secure.notification.entity.Notification;
+
+import java.util.List;
+
+public interface NotificationService {
+
+    Notification create(Notification notification);
+
+    List<Notification> getByUserAndRole(String email, String role);
+
+    void markRead(String id);
+
+    void clearAll(String email);
+}

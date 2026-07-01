@@ -1,0 +1,5 @@
+package com.secure.authservices.dto;
+
+public class LoginResponse {
+
+}

@@ -1,0 +1,5 @@
+package com.secure.authservices.repository;
+
+public class UserRepository {
+
+}

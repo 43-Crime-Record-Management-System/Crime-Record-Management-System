@@ -1,0 +1,5 @@
+package com.secure.firservices.repository;
+
+public class FIRRepository {
+
+}

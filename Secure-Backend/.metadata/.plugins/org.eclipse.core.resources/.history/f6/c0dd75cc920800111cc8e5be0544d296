@@ -1,0 +1,10 @@
+package com.secure.firservices.repository;
+import com.secure.firservices.entity.FIR;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import java.util.List;
+
+public interface FIRRepository extends MongoRepository<FIR, String> {
+
+    List<FIR> findByOfficerEmail(String email);
+}

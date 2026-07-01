@@ -1,0 +1,5 @@
+package com.secure.authservices.controller;
+
+public class UserController {
+
+}

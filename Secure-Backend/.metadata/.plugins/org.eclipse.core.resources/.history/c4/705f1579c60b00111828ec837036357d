@@ -1,0 +1,15 @@
+package com.secure.notification.repository;
+
+import com.secure.notification.entity.Notification;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import java.util.List;
+
+public interface NotificationRepository
+        extends MongoRepository<Notification, String> {
+
+    List<Notification> findByUserEmailOrRoleOrderByCreatedAtDesc(
+            String userEmail,
+            String role
+    );
+}

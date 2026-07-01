@@ -1,0 +1,63 @@
+package com.secure.notification.service;
+
+import com.secure.notification.entity.Notification;
+import com.secure.notification.repository.NotificationRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+public class NotificationServiceImpl implements NotificationService {
+
+    private final NotificationRepository repo;
+
+    public NotificationServiceImpl(NotificationRepository repo) {
+        this.repo = repo;
+    }
+
+    @Override
+    public Notification create(Notification notification) {
+        return repo.save(notification);
+    }
+
+    @Override
+    public List<Notification> getByUserAndRole(String email, String role) {
+
+        // 🔥 Fetch personal notifications
+        List<Notification> personal =
+                repo.findByUserEmailOrderByCreatedAtDesc(email);
+
+        // 🔥 Fetch role-based notifications
+        List<Notification> roleBased =
+                repo.findByRoleOrderByCreatedAtDesc(role);
+
+        // 🔥 Merge both safely
+        List<Notification> result = new ArrayList<>();
+        if (personal != null) result.addAll(personal);
+        if (roleBased != null) result.addAll(roleBased);
+
+        return result;
+    }
+
+    @Override
+    public void markRead(String id) {
+
+        Notification n = repo.findById(id)
+                .orElseThrow(() ->
+                        new RuntimeException("Notification not found"));
+
+        n.setUnread(false);
+
+        repo.save(n);
+    }
+
+    @Override
+    public void clearAll(String email) {
+
+        List<Notification> list =
+                repo.findByUserEmailOrderByCreatedAtDesc(email);
+
+        repo.deleteAll(list);
+    }
+}

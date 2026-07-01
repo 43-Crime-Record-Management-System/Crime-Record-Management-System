@@ -1,0 +1,5 @@
+package com.secure.authservices.config;
+
+public class SecurityConfig {
+
+}

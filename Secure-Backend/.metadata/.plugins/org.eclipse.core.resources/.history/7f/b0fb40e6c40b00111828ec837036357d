@@ -1,0 +1,37 @@
+package com.secure.notification.service;
+
+import com.secure.notification.entity.Notification;
+import com.secure.notification.repository.NotificationRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class NotificationService {
+
+    private final NotificationRepository repo;
+
+    public NotificationService(NotificationRepository repo) {
+        this.repo = repo;
+    }
+
+    public Notification create(Notification notification) {
+        return repo.save(notification);
+    }
+
+    public List<Notification> getByUserAndRole(String email, String role) {
+        return repo.findByUserEmailOrRoleOrderByCreatedAtDesc(email, role);
+    }
+
+    public void markRead(String id) {
+        Notification n = repo.findById(id).orElseThrow();
+        n.setUnread(false);
+        repo.save(n);
+    }
+
+    public void clearAll(String email) {
+        List<Notification> list =
+                repo.findByUserEmailOrRoleOrderByCreatedAtDesc(email, null);
+        repo.deleteAll(list);
+    }
+}

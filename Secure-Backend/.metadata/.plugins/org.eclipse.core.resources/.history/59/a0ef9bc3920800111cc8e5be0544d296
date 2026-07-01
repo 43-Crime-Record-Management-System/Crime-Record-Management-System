@@ -1,0 +1,29 @@
+package com.secure.firservices.service;
+import com.secure.firservices.entity.FIR;
+import com.secure.firservices.repository.FIRRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class FIRService {
+
+    @Autowired
+    FIRRepository firRepository;
+
+    public FIR createFIR(FIR fir) {
+        fir.setStatus("PENDING");
+        return firRepository.save(fir);
+    }
+
+    public List<FIR> getFIRByOfficer(String email) {
+        return firRepository.findByOfficerEmail(email);
+    }
+
+    public FIR updateStatus(String id, String status) {
+        FIR fir = firRepository.findById(id).orElseThrow();
+        fir.setStatus(status);
+        return firRepository.save(fir);
+    }
+}

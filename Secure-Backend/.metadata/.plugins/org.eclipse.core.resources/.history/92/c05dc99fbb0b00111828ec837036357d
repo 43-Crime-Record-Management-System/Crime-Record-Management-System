@@ -1,0 +1,5 @@
+package com.secure.notification.repository;
+
+public class NotificationRepository {
+
+}

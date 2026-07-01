@@ -1,0 +1,5 @@
+package com.secure.notification.controller;
+
+public class NotificationController {
+
+}

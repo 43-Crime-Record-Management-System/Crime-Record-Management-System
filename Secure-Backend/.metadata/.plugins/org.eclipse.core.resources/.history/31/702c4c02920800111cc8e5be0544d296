@@ -1,0 +1,5 @@
+package com.secure.firservices.entity;
+
+public class FIR {
+
+}

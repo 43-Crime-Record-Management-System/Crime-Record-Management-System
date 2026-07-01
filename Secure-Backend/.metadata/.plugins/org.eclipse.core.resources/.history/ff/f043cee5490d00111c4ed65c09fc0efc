@@ -1,0 +1,85 @@
+package com.secure.notification.controller;
+
+import com.secure.notification.entity.Notification;
+import com.secure.notification.service.NotificationService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/notifications")
+@CrossOrigin(origins = "*")
+public class NotificationController {
+
+    private final NotificationService service;
+
+    public NotificationController(NotificationService service) {
+        this.service = service;
+    }
+
+    /* ================= CREATE ================= */
+
+    @PostMapping("/create")
+    public ResponseEntity<?> create(
+            @RequestBody Notification notification) {
+
+        try {
+            Notification saved = service.create(notification);
+            return ResponseEntity.ok(saved);
+        } catch (Exception e) {
+            return ResponseEntity
+                    .internalServerError()
+                    .body("Failed to create notification");
+        }
+    }
+
+    /* ================= GET BY USER & ROLE ================= */
+
+    @GetMapping("/{email}/{role}")
+    public ResponseEntity<?> getByUserAndRole(
+            @PathVariable String email,
+            @PathVariable String role) {
+
+        try {
+            List<Notification> list =
+                    service.getByUserAndRole(email, role);
+
+            return ResponseEntity.ok(list);
+        } catch (Exception e) {
+            return ResponseEntity
+                    .internalServerError()
+                    .body("Failed to fetch notifications");
+        }
+    }
+
+    /* ================= MARK AS READ ================= */
+
+    @PutMapping("/read/{id}")
+    public ResponseEntity<?> markRead(@PathVariable String id) {
+
+        try {
+            service.markRead(id);
+            return ResponseEntity.ok("Notification marked as read");
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(404)
+                    .body("Notification not found");
+        }
+    }
+
+    /* ================= CLEAR ALL ================= */
+
+    @DeleteMapping("/{email}")
+    public ResponseEntity<?> clearAll(@PathVariable String email) {
+
+        try {
+            service.clearAll(email);
+            return ResponseEntity.ok("All notifications cleared");
+        } catch (Exception e) {
+            return ResponseEntity
+                    .internalServerError()
+                    .body("Failed to clear notifications");
+        }
+    }
+}

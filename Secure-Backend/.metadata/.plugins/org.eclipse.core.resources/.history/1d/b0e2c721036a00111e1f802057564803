@@ -1,0 +1,16 @@
+spring.application.name=AUTHSERVICES
+
+server.port=${SERVER_PORT:9001}
+
+jwt.secret=${JWT_SECRET:MY_SUPER_SECRET_KEY_12345678901234567890}
+jwt.expiration=${JWT_EXPIRATION:86400000}
+
+spring.datasource.url=${MYSQL_URL:jdbc:mysql://host.docker.internal:3307/authdb}
+spring.datasource.username=${MYSQL_USERNAME:root}
+spring.datasource.password=${MYSQL_PASSWORD:Hsenid@377809}
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.show-sql=true
+
+eureka.client.service-url.defaultZone=${EUREKA_SERVER_URL:http://localhost:8761/eureka}
